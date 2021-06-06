@@ -33,6 +33,21 @@
                     <img th:src="@{${'http://openweathermap.org/img/w/'
                     + data.weather[0].get('icon') + '.png'}}" src=""></p>
             </div>
+                <h1 class="text-center">Recent Searches</h1>
+                <div th:each="weather:${recentZips}">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <p th:text="${weather.zipCode}"></p>
+                            </div>
+                            <div class="panel-footer">
+                                <!-- Link to Update -->
+                                <!-- Link to Show  -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

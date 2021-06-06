@@ -7,6 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Response {
     private Map<String, String> coords;
     private List<Map<String, String>> weather;
@@ -19,6 +20,6 @@ public class Response {
     private String id;
     private String name;
     private String cod;
-
-
 }
+
+
